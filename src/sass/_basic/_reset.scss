@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+}
+
+body {
+    width: 100%
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        color: lightskyblue;
+        text-decoration: none;
+    }
+}
+
+p {
+    margin: 0 0 15px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

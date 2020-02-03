@@ -1,14 +1,1 @@
-@import "_basic/fonts";
-@import "_basic/variables";
-@import '_mixins/mixins';
-@import "_basic/navigation";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.wrapper {
-  width: 100%
-}
+@import "_basic/basic";
