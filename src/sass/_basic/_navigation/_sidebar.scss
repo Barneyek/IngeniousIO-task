@@ -1,0 +1,106 @@
+.side-nav {
+    position: fixed;
+    width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ebedee;
+        width: 100%;
+        padding: 30px 30px 50px;
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+
+            &__desc {
+                padding-left: 40px;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 40px;
+                    left: 20px;
+                    background-color: #ebedee;
+                }
+            }
+        }
+    }
+
+    &__mid {
+        padding: 30px 0;
+        border-bottom: 1px solid #ebedee;
+
+        .menu {
+            list-style: none;
+            margin: 0;
+
+            &__item {
+                padding: 7px 30px;
+
+                &.active {
+                    background-color: $lightBlue;
+                    position: relative;
+
+                    a {
+                        color: $blue;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 2px;
+                        height: 100%;
+                        background-color: $blue;
+                    }
+                }
+
+                a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $black;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 20px 30px;
+
+        .login {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__desc {
+                margin-right: 50px;
+
+                .name {
+                    text-transform: capitalize;
+                }
+
+                .statment {
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #99a9b1;
+                }
+            }
+        }
+    }
+}
