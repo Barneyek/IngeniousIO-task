@@ -11,7 +11,8 @@ body {
 }
 
 body {
-    width: 100%
+    width: 100%;
+    background-color: $lightGrey;
 }
 
 article,
@@ -28,9 +29,10 @@ section {
 }
 
 a {
-    color: blue;
+    color: $blue;
     text-decoration: none;
     outline: none;
+    transition: all 0.3s ease-in;
 
     &:hover,
     &:focus {
@@ -39,10 +41,19 @@ a {
     }
 }
 
+a,
 p {
-    margin: 0 0 15px;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $black;
 }
 
 img {
