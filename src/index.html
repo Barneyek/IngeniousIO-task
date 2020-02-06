@@ -54,6 +54,65 @@
             </div>
         </div>
     </aside>
+    <main class="body-content">
+        <header class="navbar">
+            <div class="navbar__select">
+                <p>Selected app:</p>
+                <a href="#">Application 1</a>
+            </div>
+            <div class="navbar__search">
+                <input type="search" name="search" placeholder="Search..." value>
+            </div>
+        </header>
+
+        <section class="general-info">
+            <h1>Dashboard</h1>
+            <div class="general-info__buttons">
+                <a href="#" class="button button--dashboard active">CTA Button 1</a>
+                <a href="#" class="button button--dashboard">CTA Button 2</a>
+            </div>
+        </section>
+        <section class="overlap">
+            <div class="overlap__title">
+                <h2>Team Management Dashboard</h2>
+            </div>
+            <div class="overlap__menu">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </section>
+        <section class="filters">
+            <div class="filters__title">
+                <h3>Filters</h3>
+            </div>
+            <div class="filters__content">
+                <p>Show</p>
+                <div class="filter__checbox">
+                    <input type="checkbox" id="status" name="status">
+                    <label for="scales">Status Details</label>
+                </div>
+                <div class="filter__checbox">
+                    <input type="checkbox" id="statistics" name="statistics" checked>
+                    <label for="statistics">Statistics</label>
+                </div>
+                <div class="filter__checbox">
+                    <input type="checkbox" id="users" name="users" checked>
+                    <label for="users">Users</label>
+                </div>
+                <p>Client</p>
+                <select name="client" id="client">
+                    <option value="">-Select-</option>
+                    <option value="client1">client1</option>
+                    <option value="client2">client2</option>
+                  </select>
+            </div>
+            <div class="filters__button">
+                <a href="#" class="button button--dashboard active">Apply Filters</a>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>

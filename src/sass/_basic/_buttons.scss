@@ -17,4 +17,14 @@
             color: $blue;
         }
     }
+
+    &--dashboard {
+        border: 1px solid $lightBlue;
+        padding: 8px 20px;
+        margin: 0 5px;
+
+        &.active {
+            background: $lightBlue;
+        }
+    }
 }

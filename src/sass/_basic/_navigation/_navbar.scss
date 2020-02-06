@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $darkBlue;
+    padding: 20px 30px;
+
+    &__select {
+        display: flex;
+        align-items: center;
+        background: $lightBlack;
+        padding: 5px 15px;
+        border-radius: 5px;
+
+        p {
+            color: #fff;
+            padding-right: 5px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    &__search {
+        position: relative;
+
+        input {
+            position: relative;
+            background: $lightBlack;
+            border-radius: 5px;
+            border: none;
+            padding: 5px 15px;
+            font-size: 14px;
+            line-height: 24px;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        &:after {
+            content: url('../assets/img/shape.png');
+            position: absolute;
+            right: 10px;
+            z-index: 1;
+            top: 10px;
+        }
+
+    }
+}
