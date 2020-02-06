@@ -45,25 +45,29 @@
 
             &__item {
                 padding: 7px 30px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
 
-                &.active {
+                &.active,
+                &:hover {
                     background-color: $lightBlue;
                     position: relative;
 
                     a {
                         color: $blue;
                     }
-
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        right: 0;
-                        top: 0;
-                        width: 2px;
-                        height: 100%;
-                        background-color: $blue;
-                    }
                 }
+
+                &.active:after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 2px;
+                    height: 100%;
+                    background-color: $blue;
+                }
+
 
                 a {
                     font-size: 16px;
