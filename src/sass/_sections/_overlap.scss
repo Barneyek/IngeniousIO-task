@@ -1,19 +1,23 @@
 .overlap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     background: #fff;
     margin: 20px 30px;
-    padding: 10px 5px;
+    height: 40px;
     border-radius: 5px;
 
     &__title {
-        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
     }
 
     &__menu {
         position: relative;
-        width: 40px;
+        width: 80px;
+        border-left: 1px solid $lightGrey;
 
         .circle {
             position: absolute;
