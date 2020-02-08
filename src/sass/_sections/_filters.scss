@@ -1,0 +1,109 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  max-width: 30%;
+  margin: 10px 30px;
+  border-radius: 5px;
+
+  &__title, &__content, &__button {
+    padding: 20px 15px;
+  }
+
+  &__title {
+    border-bottom: 1px solid $lightGrey;
+  }
+
+  &__content {
+    padding: 10px 15px;
+    border-bottom: 1px solid $lightGrey;
+
+    .subtitle {
+      padding: 15px 0;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+
+    label {
+      color: $primaryGrey;
+      padding-left: 20px;
+    }
+
+    input[type="checkbox"]:checked + label {
+      color: $black;
+    }
+
+    input[type=checkbox] {
+      position: relative;
+      cursor: pointer;
+      height: 22px;
+
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 0;
+        left: 0;
+        border: 2px solid $thirdGrey;
+        border-radius: 3px;
+        background-color: white;
+      }
+
+      &:checked {
+        &:before {
+          background-color: $blue;
+          border: 2px solid $blue;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 5px;
+          height: 10px;
+          border: solid #fff;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 2px;
+          left: 6px;
+        }
+      }
+    }
+  }
+
+  &__select {
+    position: relative;
+
+    select {
+      background: transparent;
+      min-width: 120px;
+      width: 100%;
+      font-size: 14px;
+      padding: 8px 10px;
+      border: 1px solid $lightGrey;
+      border-radius: 4px;
+      cursor: pointer;
+      appearance: none;
+      background: url('../assets/img/path-3.png') no-repeat 95% 50% white;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+
+    .button--dashboard {
+      width: 100%;
+    }
+  }
+}
