@@ -32,7 +32,7 @@ module.exports = (env, options) => ({
               },
           "css-loader",
           {
-            loader: 'postcss-loader', 
+            loader: 'postcss-loader',
             options: {
               plugins: function () {
                 return [
@@ -56,6 +56,18 @@ module.exports = (env, options) => ({
             }
           }
         ]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+         ]
       },
       {
         test: /\.(html)$/,
