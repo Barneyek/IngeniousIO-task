@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Inter-Regular;
+  src: url('../assets/fonts/Inter-Regular.otf');
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url('../assets/fonts/Inter-Bold.otf');
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url('../assets/fonts/Inter-SemiBold.otf');
+}
+
+@font-face {
+  font-family: Inter-Medium;
+  src: url('../assets/fonts/Inter-Medium.otf');
+}
+
+body {
+  font-family: $interRegular, sans-serif;
+  line-height: 1.57;
+}
+
+h1, h2, h3, h4, h5, h6, li, p {
+  color: $black;
+  font-family: $interRegular, sans-serif;
+  font-weight: 400;
+}
+
+li, a, p {
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 14px;
+  }
+}
+
+h1, .h1 {
+  font-size: 24px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 22px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 16px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 14px;
+  }
+}
+
+h3, .h3 {
+  font-size: 14px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 12px;
+  }
+}
+
+.subtitle {
+  color: $secondaryGrey;
+  font-family: $interSemiBold, sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 10px;
+  }
+}

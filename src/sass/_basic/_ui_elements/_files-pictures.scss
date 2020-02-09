@@ -1,0 +1,21 @@
+.file-pic {
+  position: relative;
+  padding: 14px;
+  border-radius: 5px;
+
+  &--red {
+    background: $lightRed;
+  }
+
+  &--turquoise {
+    background: $lightTurquoise;
+  }
+
+  &--blue {
+    background: $lightBlue;
+  }
+
+  &--big {
+    padding: 35px;
+  }
+}

@@ -1,6 +1,9 @@
 .body-content {
-    margin-left: 320px;
+    padding-left: 280px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    @media all and(min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+        padding-left: 0;
+    }
 }

@@ -1,8 +1,9 @@
-
-
-    .general-info {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 30px;
-    }
+.general-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    padding: 10px 15px 0;
+  }
+}

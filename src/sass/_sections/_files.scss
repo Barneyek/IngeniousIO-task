@@ -1,0 +1,59 @@
+.files {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 20px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid $lightGrey;
+
+    .download-img {
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px 15px;
+
+    .subtitle {
+      width: 100%;
+      padding: 15px 0;
+    }
+
+    .col-left {
+      flex: 0 0 40%;
+      max-width: 40%;
+      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+
+    .col-right {
+      flex: 0 0 60%;
+      max-width: 60%;
+      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+
+      img {
+        margin: 0 5px 5px;
+      }
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+

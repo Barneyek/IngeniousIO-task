@@ -1,15 +1,29 @@
-$path: '../assets/images/';
-
 $darkBlue: #191d1f;
 $blue: #2b8ff4;
-$lightBlue: #C5DAEF;
-$lightRed: #ef3f3f;
-$lightGreen: #62d480;
-$lightOrange: #f4982b;
-$lightPurple: #a065e0;
-$Grey: #7a8388;
 $black: #1a1a1a;
+$orange: #f4982b;
+$turquoise: #62d480;
+$lightBlue: #C5DAEF;
+$secondaryLightBlue: #d5e9fd;
+$lightRed: #fcd9d9;
+$lightGreen: #62d480;
+$lightOrange: #fdead5;
+$lightPurple: #ece0f9;
+$primaryGrey: #7a8388;
+$secondaryGrey: #99a9b1;
+$thirdGrey: #d0d2d2;
+$fourthGrey: #acaeaf;
+$lightTurquoise: #e5f4e7;
 $lightBlack: #303435;
 $lightGrey: #ebedee;
 
-$lgPurpleBlue: linear-gradient(244deg, #a065e0 100%, #2b8ff4);
+$lgPurpleBlue: linear-gradient(55deg, rgba(43, 143, 244, 1) 0%, rgba(160, 101, 224, 1) 100%);
+
+$interRegular: 'Inter-Regular';
+$interBold: 'Inter-Bold';
+$interMedium: 'Inter-Medium';
+$interSemiBold: 'Inter-SemiBold';
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-desktopBig: 1200px;
