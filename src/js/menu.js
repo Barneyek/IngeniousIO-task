@@ -10,4 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttonMenu = document.querySelector('.navbar__menu'),
         menu = document.querySelector('.side-nav');
     handleMenu(buttonMenu, menu);
-})
+});

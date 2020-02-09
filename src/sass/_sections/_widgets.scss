@@ -4,18 +4,31 @@
   flex-wrap: wrap;
   margin-bottom: 20px;
 
-  .col-left, .col-right {
+  .col-left,
+  .col-right {
     flex: 0 0 50%;
     max-width: 50%;
     width: 100%;
+
+    @media all and(max-width: $breakpoint-desktop) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      min-height: 200px;
+    }
   }
 
   .col-left {
     padding-right: 10px;
+    @media all and(max-width: $breakpoint-desktop) {
+      padding: 0;
+    }
   }
 
   .col-right {
     padding-left: 10px;
+    @media all and(max-width: $breakpoint-desktop) {
+      padding: 20px 0;
+    }
   }
 
   &__premium {
@@ -23,7 +36,8 @@
     padding: 20px 15px;
     border-radius: 5px;
 
-    h3, p {
+    h3,
+    p {
       color: #fff;
     }
 

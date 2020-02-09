@@ -3,18 +3,25 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media all and(max-width: $breakpoint-desktop) {
+    flex-direction: column;
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 20px;
+    margin-left: -20px;
+  }
+
   &__box {
     display: flex;
-    flex: 0 0 23%;
-    max-width: 23%;
     flex-wrap: wrap;
     align-items: center;
 
     padding: 15px 10px;
     background: #fff;
     border-radius: 5px;
+
     @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-     justify-content: center;
+      justify-content: center;
       text-align: center;
     }
   }
@@ -43,12 +50,15 @@
 
   &__desc {
     padding-left: 8px;
+
     @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
       padding: 5px 0 0 0;
     }
+
     .number {
       font-size: 20px;
       line-height: 1.2;
+
       @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
         padding: 5px 0;
       }

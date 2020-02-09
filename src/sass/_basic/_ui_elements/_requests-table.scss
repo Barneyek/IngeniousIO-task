@@ -7,6 +7,10 @@
   border-collapse: collapse;
   border-radius: 5px;
 
+  @media all and(max-width: $breakpoint-desktop) {
+    max-width: 100%;
+  }
+
   &-headers {
     background: $lightGrey;
   }
@@ -66,4 +70,3 @@
     }
   }
 }
-

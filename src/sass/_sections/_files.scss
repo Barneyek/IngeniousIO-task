@@ -5,6 +5,11 @@
   border-radius: 5px;
   margin: 20px 0;
 
+  @media all and(max-width: $breakpoint-desktop) {
+    margin: 0 0 20px;
+    width: 100%;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -28,9 +33,23 @@
       padding: 15px 0;
     }
 
+    img {
+      margin: 0 5px 5px;
+
+      @media all and(max-width: $breakpoint-desktop) {
+        margin: 0 10px 5px;
+      }
+    }
+
     .col-left {
       flex: 0 0 40%;
       max-width: 40%;
+
+      @media all and(max-width: $breakpoint-desktop) {
+        max-width: unset;
+        flex: unset;
+      }
+
       @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
         max-width: 100%;
         flex: 0 0 100%;
@@ -40,14 +59,18 @@
     .col-right {
       flex: 0 0 60%;
       max-width: 60%;
+
+      @media all and(max-width: $breakpoint-desktop) {
+        max-width: unset;
+        flex: unset;
+      }
+
       @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
         max-width: 100%;
         flex: 0 0 100%;
       }
 
-      img {
-        margin: 0 5px 5px;
-      }
+
     }
 
     img {
@@ -55,5 +78,3 @@
     }
   }
 }
-
-

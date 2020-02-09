@@ -17,5 +17,18 @@
 
   &--big {
     padding: 35px;
+    display: flex;
+
+    @media all and(max-width: $breakpoint-desktop) {
+      display: none;
+    }
+  }
+
+  &--small {
+    display: flex;
+
+    @media all and(min-width: $breakpoint-desktop) {
+      display: none;
+    }
   }
 }

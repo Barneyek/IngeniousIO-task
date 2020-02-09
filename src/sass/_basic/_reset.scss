@@ -13,6 +13,9 @@ body {
 body {
     width: 100%;
     background-color: $lightGrey;
+    &.lock{
+        overflow: hidden;
+    }
 }
 
 article,

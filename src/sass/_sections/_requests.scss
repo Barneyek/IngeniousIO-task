@@ -3,6 +3,10 @@
   border-radius: 5px;
   margin: 20px 0;
 
+  @media all and(max-width: $breakpoint-desktop) {
+    max-width: 100%;
+  }
+
   .tabs {
     display: flex;
     list-style: none;
@@ -38,7 +42,7 @@
     }
   }
 
-  &__box{
+  &__box {
     display: none;
     padding: 20px;
     animation: animateContents 1s ease;
@@ -64,4 +68,3 @@
     opacity: 1;
   }
 }
-
