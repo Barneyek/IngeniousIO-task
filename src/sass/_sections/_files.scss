@@ -31,11 +31,19 @@
     .col-left {
       flex: 0 0 40%;
       max-width: 40%;
+      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
     }
 
     .col-right {
       flex: 0 0 60%;
       max-width: 60%;
+      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
 
       img {
         margin: 0 5px 5px;

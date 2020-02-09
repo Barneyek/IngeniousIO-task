@@ -7,11 +7,16 @@
     display: flex;
     flex: 0 0 23%;
     max-width: 23%;
+    flex-wrap: wrap;
     align-items: center;
-    max-height: 120px;
+
     padding: 15px 10px;
     background: #fff;
     border-radius: 5px;
+    @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+     justify-content: center;
+      text-align: center;
+    }
   }
 
   &__pic {
@@ -38,10 +43,15 @@
 
   &__desc {
     padding-left: 8px;
-
+    @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+      padding: 5px 0 0 0;
+    }
     .number {
       font-size: 20px;
       line-height: 1.2;
+      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+        padding: 5px 0;
+      }
     }
   }
 }

@@ -29,17 +29,32 @@ h1, h2, h3, h4, h5, h6, li, p {
   font-weight: 400;
 }
 
+li, a, p {
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 14px;
+  }
+}
+
 h1, .h1 {
   font-size: 24px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 22px;
+  }
 }
 
 h2,
 .h2 {
   font-size: 16px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 14px;
+  }
 }
 
 h3, .h3 {
   font-size: 14px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 12px;
+  }
 }
 
 .subtitle {
@@ -49,4 +64,7 @@ h3, .h3 {
   line-height: 1.33;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
+    font-size: 10px;
+  }
 }
