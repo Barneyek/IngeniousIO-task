@@ -2,14 +2,13 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-
   border-radius: 5px;
 
-  &__title, &__content, &__button {
-    padding: 20px 15px;
+  &__header, &__content, &__button {
+    padding: 15px;
   }
 
-  &__title {
+  &__header {
     border-bottom: 1px solid $lightGrey;
   }
 
