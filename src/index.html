@@ -118,7 +118,7 @@
     <div class="wrapper__col-right">
       <div class="statistics">
         <div class="statistics__box">
-          <div class="statistics__pic statistics__pic--blueq">
+          <div class="statistics__pic statistics__pic--blue">
             <img src="./assets/img/combined-shape3.png" alt="shape">
           </div>
           <div class="statistics__desc">
@@ -155,56 +155,64 @@
         </div>
       </div>
       <div class="requests">
-        <div class="requests__tabs">
-
+        <ul class="tabs">
+          <li class="tabs__item active" data-tab-id='tab1'>Requests</li>
+          <li class="tabs__item" data-tab-id='tab2'>Activity Score</li>
+        </ul>
+        <div id="tab1" class="requests__box content active">
+          <table class="requests__table">
+            <thead class="requests__table-headers">
+            <tr class="requests__table-row">
+              <th class="requests__table-cell requests__table-cell--head">Description</th>
+              <th class="requests__table-cell requests__table-cell--head">Status</th>
+              <th class="requests__table-cell requests__table-cell--head">Due date</th>
+              <th class="requests__table-cell requests__table-cell--head">Responsible party</th>
+              <th class="requests__table-cell requests__table-cell--head">Send items</th>
+              <th class="requests__table-cell requests__table-cell--head">Send items</th>
+              <th class="requests__table-cell requests__table-cell--head">Responsible party</th>
+            </tr>
+            </thead>
+            <tr class="requests__table-row">
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+              <td class="requests__table-cell requests__table-cell--status turquoise">Solved</td>
+              <td class="requests__table-cell">12/24/2019</td>
+              <td class="requests__table-cell requests__table-cell--picture">
+                <img src="./assets/img/ova2l.png" alt="person"><span>Lucille Richards</span>
+              </td>
+              <td class="requests__table-cell">Yes</td>
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            </tr>
+            <tr class="requests__table-row">
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+              <td class="requests__table-cell requests__table-cell--status orange">In progress</td>
+              <td class="requests__table-cell">12/24/2019</td>
+              <td class="requests__table-cell requests__table-cell--picture">
+                <img src="./assets/img/ova2l.png" alt="person"><span>Lucille Richards</span>
+              </td>
+              <td class="requests__table-cell">Yes</td>
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            </tr>
+            <tr class="requests__table-row">
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+              <td class="requests__table-cell requests__table-cell--status turquoise">Accepted</td>
+              <td class="requests__table-cell">12/24/2019</td>
+              <td class="requests__table-cell requests__table-cell--picture">
+                <img src="./assets/img/ova2l.png" alt="person">
+                <span>Lucille Richards</span>
+              </td>
+              <td class="requests__table-cell">Yes</td>
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+              <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            </tr>
+          </table>
         </div>
-        <table class="requests__table">
-          <thead class="requests__table-headers">
-          <tr class="requests__table-row">
-            <th class="requests__table-cell requests__table-cell--head">Description</th>
-            <th class="requests__table-cell requests__table-cell--head">Status</th>
-            <th class="requests__table-cell requests__table-cell--head">Due date</th>
-            <th class="requests__table-cell requests__table-cell--head">Responsible party</th>
-            <th class="requests__table-cell requests__table-cell--head">Send items</th>
-            <th class="requests__table-cell requests__table-cell--head">Send items</th>
-            <th class="requests__table-cell requests__table-cell--head">Responsible party</th>
-          </tr>
-          </thead>
-          <tr class="requests__table-row">
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-            <td class="requests__table-cell requests__table-cell--status turquoise">Solved</td>
-            <td class="requests__table-cell">12/24/2019</td>
-            <td class="requests__table-cell requests__table-cell--picture">
-              <img src="./assets/img/ova2l.png" alt="person"><span>Lucille Richards</span>
-            </td>
-            <td class="requests__table-cell">Yes</td>
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-          </tr>
-          <tr class="requests__table-row">
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-            <td class="requests__table-cell requests__table-cell--status orange">In progress</td>
-            <td class="requests__table-cell">12/24/2019</td>
-            <td class="requests__table-cell requests__table-cell--picture">
-              <img src="./assets/img/ova2l.png" alt="person"><span>Lucille Richards</span>
-            </td>
-            <td class="requests__table-cell">Yes</td>
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-          </tr>
-          <tr class="requests__table-row">
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-            <td class="requests__table-cell requests__table-cell--status turquoise">Accepted</td>
-            <td class="requests__table-cell">12/24/2019</td>
-            <td class="requests__table-cell requests__table-cell--picture">
-              <img src="./assets/img/ova2l.png" alt="person">
-              <span>Lucille Richards</span>
-            </td>
-            <td class="requests__table-cell">Yes</td>
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-            <td class="requests__table-cell">Lorem ipsum dolor.</td>
-          </tr>
-        </table>
+        <div id="tab2" class="requests__box content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci animi aspernatur beatae debitis ea
+            earum eius eum explicabo facere id impedit labore libero molestias mollitia nemo saepe velit, vero voluptas
+            voluptatem?</p>
+        </div>
       </div>
     </div>
   </section>
