@@ -5,6 +5,21 @@
     background-color: $darkBlue;
     padding: 20px 30px;
 
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        display: none;
+
+        @media all and(max-width: $breakpoint-desktop) {
+            display: flex;
+            margin-right: 10px;
+        }
+    }
+
     &__select {
         display: flex;
         align-items: center;
@@ -23,8 +38,11 @@
     &__search {
         position: relative;
 
+        @media all and(max-width: $breakpoint-desktop) {
+            height: 15px;
+        }
+
         input {
-            position: relative;
             background: $lightBlack;
             border-radius: 5px;
             border: none;
@@ -32,10 +50,15 @@
             font-size: 14px;
             line-height: 24px;
 
+            @media all and(max-width: $breakpoint-desktop) {
+                display: none;
+            }
+
             &:placeholder {
                 color: #fff;
             }
-            &:focus{
+
+            &:focus {
                 outline: none;
             }
         }
@@ -46,6 +69,50 @@
             right: 10px;
             z-index: 1;
             top: 10px;
+
+            @media all and(max-width: $breakpoint-desktop) {
+                top: -3px;
+                right: 11px;
+            }
+        }
+    }
+
+    &__menu {
+        display: none;
+
+        @media all and(max-width: $breakpoint-desktop) {
+            background: $lightBlack;
+            padding: 9px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            cursor: pointer;
+            pointer-events: all;
+
+            &--bar {
+                display: block;
+                background: #fff;
+                width: 16px;
+                height: 2px;
+                margin: 2px;
+                transition: transform .4s, opacity .4s;
+            }
+        }
+    }
+    .change {
+        .navbar__menu--bar1 {
+            transform: rotate(45deg) translate(4px, 5px);
+        }
+
+        .navbar__menu--bar2 {
+            opacity: 0;
+        }
+
+        .navbar__menu--bar3 {
+            transform: rotate(-45deg) translate(3px, -4px);
         }
     }
 }
