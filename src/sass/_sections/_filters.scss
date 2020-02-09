@@ -78,18 +78,19 @@
 
   &__select {
     position: relative;
+    padding-bottom: 20px;
 
     select {
-      background: transparent;
       min-width: 120px;
       width: 100%;
       font-size: 14px;
+      color: $primaryGrey;
       padding: 8px 10px;
       border: 1px solid $lightGrey;
       border-radius: 4px;
       cursor: pointer;
       appearance: none;
-      background: url('../assets/img/path-3.png') no-repeat 95% 50% white;
+      background: transparent url('../assets/img/path-3.png') no-repeat 95% 50%;
 
       &:focus {
         outline: none;
