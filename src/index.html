@@ -81,38 +81,133 @@
       <span class="circle"></span>
     </div>
   </section>
-  <section class="filters">
-    <div class="filters__title">
-      <h2>Filters</h2>
+  <section class="wrapper">
+    <div class="wrapper__col-left">
+      <div class="filters">
+        <div class="filters__title">
+          <h2>Filters</h2>
+        </div>
+        <div class="filters__content">
+          <p class="subtitle">Show</p>
+          <div class="filters__checkbox">
+            <input class="checkmark" type="checkbox" id="status" name="status">
+            <label for="status">Status Details</label>
+          </div>
+          <div class="filters__checkbox">
+            <input class="checkmark" type="checkbox" id="statistics" name="statistics" checked>
+            <label for="statistics">Statistics</label>
+          </div>
+          <div class="filters__checkbox">
+            <input class="checkmark" type="checkbox" id="users" name="users" checked>
+            <label for="users">Users</label>
+          </div>
+          <p class="subtitle">Client</p>
+          <div class="filters__select">
+            <select name="client" id="client">
+              <option value="">-Select-</option>
+              <option value="client1">client1</option>
+              <option value="client2">client2</option>
+            </select>
+          </div>
+        </div>
+        <div class="filters__button">
+          <a href="#" class="button button--dashboard active">Apply Filters</a>
+        </div>
+      </div>
     </div>
-    <div class="filters__content">
-      <p class="subtitle">Show</p>
-      <div class="filters__checkbox">
-        <input class="checkmark" type="checkbox" id="status" name="status">
-        <label for="status">Status Details</label>
+    <div class="wrapper__col-right">
+      <div class="statistics">
+        <div class="statistics__box">
+          <div class="statistics__pic statistics__pic--blueq">
+            <img src="./assets/img/combined-shape3.png" alt="shape">
+          </div>
+          <div class="statistics__desc">
+            <p class="subtitle">Employees</p>
+            <p class="number">21</p>
+          </div>
+        </div>
+        <div class="statistics__box">
+          <div class="statistics__pic statistics__pic--turquoise">
+            <img src="./assets/img/combined-shape.png" alt="shape">
+          </div>
+          <div class="statistics__desc">
+            <p class="subtitle">REQUSTS</p>
+            <p class="number">37</p>
+          </div>
+        </div>
+        <div class="statistics__box">
+          <div class="statistics__pic statistics__pic--orange">
+            <img src="./assets/img/path.png" alt="shape">
+          </div>
+          <div class="statistics__desc">
+            <p class="subtitle">ACTIVITY Score</p>
+            <p class="number">8.5/10</p>
+          </div>
+        </div>
+        <div class="statistics__box statistics__box">
+          <div class="statistics__pic statistics__pic--purple">
+            <img src="./assets/img/shape2.png" alt="shape">
+          </div>
+          <div class="statistics__desc">
+            <p class="subtitle">solved</p>
+            <p class="number">331</p>
+          </div>
+        </div>
       </div>
-      <div class="filters__checkbox">
-        <input class="checkmark" type="checkbox" id="statistics" name="statistics" checked>
-        <label for="statistics">Statistics</label>
+      <div class="requests">
+        <div class="requests__tabs">
+
+        </div>
+        <table class="requests__table">
+          <thead class="requests__table-headers">
+          <tr class="requests__table-row">
+            <th class="requests__table-cell requests__table-cell--head">Description</th>
+            <th class="requests__table-cell requests__table-cell--head">Status</th>
+            <th class="requests__table-cell requests__table-cell--head">Due date</th>
+            <th class="requests__table-cell requests__table-cell--head">Responsible party</th>
+            <th class="requests__table-cell requests__table-cell--head">Send items</th>
+            <th class="requests__table-cell requests__table-cell--head">Send items</th>
+            <th class="requests__table-cell requests__table-cell--head">Responsible party</th>
+          </tr>
+          </thead>
+          <tr class="requests__table-row">
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            <td class="requests__table-cell requests__table-cell--status turquoise">Solved</td>
+            <td class="requests__table-cell">12/24/2019</td>
+            <td class="requests__table-cell requests__table-cell--picture">
+              <img src="./assets/img/ova2l.png" alt="person"><span>Lucille Richards</span>
+            </td>
+            <td class="requests__table-cell">Yes</td>
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+          </tr>
+          <tr class="requests__table-row">
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            <td class="requests__table-cell requests__table-cell--status orange">In progress</td>
+            <td class="requests__table-cell">12/24/2019</td>
+            <td class="requests__table-cell requests__table-cell--picture">
+              <img src="./assets/img/ova2l.png" alt="person"><span>Lucille Richards</span>
+            </td>
+            <td class="requests__table-cell">Yes</td>
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+          </tr>
+          <tr class="requests__table-row">
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            <td class="requests__table-cell requests__table-cell--status turquoise">Accepted</td>
+            <td class="requests__table-cell">12/24/2019</td>
+            <td class="requests__table-cell requests__table-cell--picture">
+              <img src="./assets/img/ova2l.png" alt="person">
+              <span>Lucille Richards</span>
+            </td>
+            <td class="requests__table-cell">Yes</td>
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+            <td class="requests__table-cell">Lorem ipsum dolor.</td>
+          </tr>
+        </table>
       </div>
-      <div class="filters__checkbox">
-        <input class="checkmark" type="checkbox" id="users" name="users" checked>
-        <label for="users">Users</label>
-      </div>
-      <p class="subtitle">Client</p>
-      <div class="filters__select">
-        <select name="client" id="client">
-          <option value="">-Select-</option>
-          <option value="client1">client1</option>
-          <option value="client2">client2</option>
-        </select>
-      </div>
-    </div>
-    <div class="filters__button">
-      <a href="#" class="button button--dashboard active">Apply Filters</a>
     </div>
   </section>
-
 </main>
 </body>
 
