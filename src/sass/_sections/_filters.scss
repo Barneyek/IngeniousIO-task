@@ -3,6 +3,8 @@
   flex-direction: column;
   background-color: #fff;
   border-radius: 5px;
+  flex: 0 0 30%;
+  max-width: 30%;
 
   @media all and(max-width: $breakpoint-desktop) {
     flex: 0 0 60%;
@@ -14,10 +16,6 @@
   &__content,
   &__button {
     padding: 15px;
-
-    @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-      padding: 10px;
-    }
   }
 
   &__header {
@@ -42,10 +40,6 @@
       color: $primaryGrey;
       padding-left: 20px;
       cursor: pointer;
-
-      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-        font-size: 14px;
-      }
     }
 
     input[type="checkbox"]:checked+label {
@@ -56,10 +50,6 @@
       position: relative;
       cursor: pointer;
       height: 22px;
-
-      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-        height: 15px;
-      }
 
       &:before {
         content: "";
@@ -72,11 +62,6 @@
         border: 2px solid $thirdGrey;
         border-radius: 3px;
         background-color: white;
-
-        @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-          width: 12px;
-          height: 12px;
-        }
       }
 
       &:checked {
@@ -96,11 +81,6 @@
           position: absolute;
           top: 2px;
           left: 6px;
-
-          @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-            width: 3px;
-            height: 7px;
-          }
         }
       }
     }

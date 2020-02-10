@@ -1,10 +1,24 @@
 .requests {
-  background: #fff;
-  border-radius: 5px;
+  max-width: 100%;
   margin: 20px 0;
 
-  @media all and(max-width: $breakpoint-desktop) {
-    max-width: 100%;
+  @media all and(min-width: $breakpoint-desktop) {
+    padding-left: 20px;
+  }
+
+  &__wrapper {
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  @media all and(min-width: $breakpoint-desktop) {
+    max-width: 70%;
+    flex: 0 0 70%;
+    transform: translateY(calc(-95% + 22px));
+  }
+
+  @media all and(min-width: $breakpoint-desktop) and(max-width:$breakpoint-desktopBig) {
+    transform: translateY(calc(-60% + 22px));
   }
 
   .tabs {
@@ -46,6 +60,10 @@
     display: none;
     padding: 20px;
     animation: animateContents 1s ease;
+
+    @media all and(min-width: $breakpoint-desktop) {
+      height: 297px;
+    }
 
     &.active {
       display: block;

@@ -3,7 +3,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 30px;
-  @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-    padding: 10px 15px 0;
+
+  &__buttons {
+    .button:last-child {
+      margin: 0;
+    }
   }
 }

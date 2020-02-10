@@ -4,6 +4,8 @@
   background-color: #fff;
   border-radius: 5px;
   margin: 20px 0;
+  flex: 0 0 30%;
+  max-width: 30%;
 
   @media all and(max-width: $breakpoint-desktop) {
     margin: 0 0 20px;
@@ -44,15 +46,11 @@
     .col-left {
       flex: 0 0 40%;
       max-width: 40%;
-
+      padding-right: 10px;
+      
       @media all and(max-width: $breakpoint-desktop) {
         max-width: unset;
         flex: unset;
-      }
-
-      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-        max-width: 100%;
-        flex: 0 0 100%;
       }
     }
 
@@ -64,13 +62,6 @@
         max-width: unset;
         flex: unset;
       }
-
-      @media all and(min-width: $breakpoint-desktop) and (max-width: $breakpoint-desktopBig) {
-        max-width: 100%;
-        flex: 0 0 100%;
-      }
-
-
     }
 
     img {
