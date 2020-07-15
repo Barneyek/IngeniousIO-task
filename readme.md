@@ -1,4 +1,4 @@
-"Ogólnie wymagania sa takie:<br/>
+Wymagania<br/>
 -wykorzystanie flexboxa<br/>
 -bez użycia cssowych bibliotek typu Bootstrap<br/>
 -kontener tabeli ma się scrollować w poziomie jak na designie<br/>
